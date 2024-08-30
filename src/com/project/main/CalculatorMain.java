@@ -2,7 +2,6 @@ package com.project.main;
 
 import com.project.calculator.Calculator;  // Import the Calculator class
 import com.project.enums.Operation;         // Import the Operation enum
-
 import java.util.*;
 
 public class CalculatorMain {
@@ -29,6 +28,5 @@ public class CalculatorMain {
 
         System.out.println("Chaining operations on 11 (+3 *2 -4): " + chainResult);
 
-        System.out.println("Hi");
     }
 }

@@ -1,8 +1,7 @@
 package com.project.calculator;
 
 import com.project.enums.Operation;
-
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class CalculatorTest {
@@ -67,7 +66,7 @@ public class CalculatorTest {
 
     private void testChainedCalculation() {
         Calculator calculator = new Calculator();
-        Map<Operation, Number> operationsChain = new HashMap<>();
+        Map<Operation, Number> operationsChain = new LinkedHashMap<>();
         operationsChain.put(Operation.ADD, 5);
         operationsChain.put(Operation.MULTIPLY, 2);
         Number result = calculator.chainCalculate(1, operationsChain);
